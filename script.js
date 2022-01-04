@@ -1,14 +1,10 @@
 'use strict';
-//  El so that we do not confuse it for score, but it is an DOM element.
-
-
-
 
 // Selecting elements
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.querySelector('#score--0');
-// get Element is a tad faster. If you use 1000 + elements
+
 const score1El = document.getElementById('score--1');
 const diceEl = document.querySelector('.dice');
 const current0El = document.getElementById('current--0');
@@ -21,8 +17,6 @@ const btnHold = document.querySelector('.btn--hold');
 let scores, currentScore, activePlayer, playing; 
 
 // Starting conditions
-
-// starting conditions 
 const init = function(){
      scores = [0, 0];
      currentScore = 0;
@@ -50,12 +44,10 @@ player1El.classList.toggle('player--active');
 };
 
 // Rolling dice functionality
-
 btnRoll.addEventListener('click', function() {
     if(playing){
 // 1. Generating a random rice roll
 const dice = Math.trunc(Math.random() * 6 ) +1;
-// console.log(dice);
 
 // 2. Display dice
 diceEl.classList.remove('hidden'); 
@@ -74,7 +66,6 @@ switchPlayer();
 
 btnHold.addEventListener('click', function(){
 if(playing) {
-    // console.log(scores[activePlayer]);
     // 1. Add current score to active player's score
     scores[activePlayer] += currentScore;
     // score[1] = scores[1] + currentScore; 
