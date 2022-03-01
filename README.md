@@ -1,6 +1,6 @@
 ## PIG-GAME ##
 
-Sneak Peak:
+Sneak Peek:
 
 <img src="https://github.com/LazyAnTT/Pig-game/blob/main/pig-game-intro.png" style="width:700px;" />
 
